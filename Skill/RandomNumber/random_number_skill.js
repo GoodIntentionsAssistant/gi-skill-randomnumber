@@ -1,7 +1,7 @@
 /**
- * Number Skill
+ * Random Number Skill
  */
-var Skill = require('../../../src/Skill/skill');
+const Skill = girequire('src/Skill/skill');
 
 module.exports = class RandomnumberSkill extends Skill {
 

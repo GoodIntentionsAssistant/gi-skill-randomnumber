@@ -1,8 +1,9 @@
 /**
  * Random number intent
  */
-const Intent = require('../../../../src/Intent/intent');
-var _ = require('underscore');
+const Intent = girequire('src/Intent/intent');
+
+const _ = require('underscore');
 
 module.exports = class RandomNumberIntent extends Intent {
 
@@ -13,13 +14,13 @@ module.exports = class RandomNumberIntent extends Intent {
 
 		this.parameter('number', {
 			name: "Number",
-			entity: "App.Common.Entity.Number",
+			entity: "App.Basics.Entity.Number",
 			required: false
 		});
 
 		this.parameter('number_to', {
 			name: "Number To",
-			entity: "App.Common.Entity.Number",
+			entity: "App.Basics.Entity.Number",
 			required: false
 		});
 	}
